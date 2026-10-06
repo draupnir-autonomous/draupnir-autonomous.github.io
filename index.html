@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.164.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42219&amp;path=livereload" data-no-instant defer></script>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title itemprop="name"> Draupnir Industries
+    
+</title>
+<meta name="description" content="A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format." />
+<meta property="og:title" content="TailBliss | TailBliss" />
+<meta name="twitter:title" content="TailBliss | TailBliss" />
+<meta itemprop="name" content="TailBliss | TailBliss" />
+<meta name="application-name" content="TailBliss | TailBliss" />
+<meta property="og:description"
+      content="A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format." />
+<meta property="og:site_name" content="Draupnir" />
+<meta property="og:url" content="http://localhost:42219/" />
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/images/tailbliss-cover.png" />
+<meta property="og:image:secure_url" content="http://localhost:42219/images/tailbliss-cover.png" />
+<meta property="og:type" content="website" />
+
+
+
+<link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+<link href="https://cdn.jsdelivr.net" rel="preconnect" crossorigin="anonymous">
+
+<link href="https://static.cloudflareinsights.com" rel="preconnect" rel="dns-prefetch">
+<link href="https://static.cloudflareinsights.com" crossorigin="anonymous" rel="preconnect">
+
+
+
+
+
+
+<link href="/images/pages/tailbliss-rocket-indigo_hu_2ef9bad45d7b782.webp" rel="preload" as="image" fetchpriority="high" loading="eager">
+
+
+
+
+<link href="/images/site-logo.svg" rel="preload" as="image" fetchpriority="high" loading="eager">
+
+
+<link href="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" as="script" rel="preconnect" rel="dns-prefetch">
+
+
+<style>
+  [x-cloak] {
+    display: none !important;
+  }
+</style>
+
+<script>
+  
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+</script>
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<link rel="stylesheet" href="/css/main.mux2p3u8.css">
+
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-950">
+    <div class="top-0 z-50 w-full text-gray-200 bg-gray-200 border-2 border-gray-900 bg-gray-950 md:sticky border-b-stone-200/10">
+    <div x-data="{ open: false }" class="flex flex-col px-4 mx-auto max-w-full md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row justify-between items-center p-4">
+            <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                
+                <div class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                    Draupnir</div>
+            </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="button" :aria-expanded="open" aria-label="Toggle navigation menu" aria-controls="menuItems">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+       
+            
+            
+            
+            <button id="theme-toggle" type="button" class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 md:hover:bg-gray-100 dark:md:hover:bg-gray-700 md:focus:outline-none md:focus:ring-4 md:focus:ring-gray-200 dark:md:focus:ring-gray-700 md:ml-2 xs:hidden">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                    </path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-label="Dark or Light Mode" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+        </nav>
+    </div>
+</div>
+    
+<main>
+    <div class="bg-gray-200 dark:bg-gray-900">
+        <div class="px-4 py-8 mx-auto max-w-screen-xl">
+            <div class="grid gap-8 items-center mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+                <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+                    <h1 class="mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+                         Draupnir
+                    </h1>
+                    <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+                       
+                    </h2>
+                    <p class="mx-auto mb-6 max-w-xl font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+                        Draupnir enables autonomous drones to navigate GPS-denied indoor environments while reconstructing detailed 3D maps in real time. By combining onboard perception, localization, and intelligent path planning, our technology allows drones to explore, understand, and operate in complex spaces without external infrastructure.
+                    </p>
+                </div>
+                <div class="col-span-6">
+                    <div class="mx-auto w-full max-w-sm sm:max-w-md lg:max-w-lg hero-container">
+                        
+                        
+                        
+                            
+                            
+                    <video
+    class="mx-auto w-full aspect-square rounded-2xl shadow-xl object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata">
+    <source src="/videos/Autonomous-Flight-small.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="relative my-4">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+            <div class="relative sm:py-8 lg:py-0">
+                <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                    <div class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl dark:bg-gray-900/10 lg:right-72"></div><svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
+                        <defs>
+                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"></rect>
+                    </svg>
+                </div>
+                <div class="relative px-4 py-6 mx-auto w-full h-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
+                    <div class="overflow-hidden rounded-2xl shadow-xl">
+                        
+                        
+                        
+                       <video
+    class="mx-auto w-full aspect-square rounded-2xl shadow-xl object-cover"
+    autoplay
+    muted
+    loop
+    playsinline>
+    <source src="/videos/Mission-small.mp4" type="video/mp4">
+</video>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="relative px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:px-0">
+                <div class="md:pt-12 sm:pt-6 lg:pt-20">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+                        Our Stack
+                    </h2>
+                    <div class="mt-6 text-gray-900 dark:text-white">
+                        <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
+                            
+                            <p class="text-lg text-gray-900 dark:text-white">
+Our autonomy stack is built on ROS 2 and developed and validated in Gazebo before deployment on real platforms.                            </p>
+                            
+                            <p class="text-lg text-gray-900 dark:text-white">
+Draupnir combines LiDAR and visual odometry for robust localization and 3D reconstruction, while frontier-based exploration allows the drone to autonomously identify unexplored regions, plan its next movement, and progressively map complex indoor environments.                            </p>
+                            
+                            <p class="text-lg text-gray-900 dark:text-white">
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="overflow-hidden sm:pt-6 lg:relative">
+        <div class="px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-12 lg:px-8">
+            <div>
+                <div class="md:mt-8">
+                    <div class="mt-6 sm:max-w-xl">
+                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl md:mt-16">
+                            Roadmap
+                        </h2>
+                        
+                        <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
+Our roadmap starts in simulation, where the autonomy stack is developed and validated using ROS 2 and Gazebo. The next step is MVP_0, a first physical prototype capable of autonomous indoor navigation and 3D map reconstruction using LiDAR and visual odometry. From there, we aim to extend the system toward multi-drone swarms, enabling coordinated exploration and mapping. The final objective is a compact autonomy module that integrates perception, localization, planning, and control into a deployable system that can be adapted to different drone platforms.                        </p>
+                        
+                        <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+            <div class="md:py-12 sm:relative sm:mt-12 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <div class="hidden sm:block">
+                    <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl dark:bg-gray-900/10 lg:left-80 lg:right-0 lg:w-full"></div><svg class="absolute top-8 right-1/2 -mr-3 lg:left-0 lg:m-0" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
+                        <defs>
+                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                    </svg>
+                </div>
+                <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
+                    
+                    
+                    
+                    <img src="images/r.png" width="800" height="600" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div class="overflow-hidden sm:pt-6 lg:relative">
+        <div class="px-4 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-12 lg:px-8">
+            <div>
+                <div class="md:mt-8">
+                    <div class="mt-6 sm:max-w-xl">
+                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl md:mt-16">
+                            Team
+                        </h2>
+                        
+                        <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
+Alessandro Miragliotta is a Software Engineer with an Msc in Computer Engineering, he developed his thesis on Drone embedded security at Purdue University.
+Ex-Leonardo Helicopters engineer and Ex-Qualcomm intern.
+
+
+                        <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
+ Fabio Fraschetti is a Doctoral Student in Applied Mathematics, he holds an Msc in Computer Engineering, he developed his thesis at UCL-London.
+ His interests are in Machine Learning, Control Theory and Game Theory.
+ 
+ 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+            <div class="md:py-12 sm:relative sm:mt-12 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <div class="hidden sm:block">
+                    <div class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl dark:bg-gray-900/10 lg:left-80 lg:right-0 lg:w-full"></div><svg class="absolute top-8 right-1/2 -mr-3 lg:left-0 lg:m-0" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
+                        <defs>
+                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                    </svg>
+                </div>
+
+
+<div class="col-span-6 flex justify-center">
+    <div class="grid grid-cols-2 gap-6 max-w-2xl w-full">
+
+        
+        <div class="flex flex-col items-center">
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Alessandro Miragliotta
+            </h3>
+
+            <p class="mb-3 text-sm text-gray-600 dark:text-gray-400">
+                Founder
+            </p>
+
+            <img
+                src="/images/am.jpeg"
+                alt="Alessandro Miragliotta"
+                class="w-56 h-72 rounded-lg shadow-xl object-cover"
+                loading="lazy"
+            >
+        </div>
+
+        
+        <div class="flex flex-col items-center">
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Fabio Fraschetti
+            </h3>
+
+            <p class="mb-3 text-sm text-gray-600 dark:text-gray-400">
+                Co-Founder
+            </p>
+
+            <img
+                src="/images/fr.jpeg"
+                alt="Other Founder Name"
+                class="w-56 h-72 rounded-lg shadow-xl object-cover"
+                loading="lazy"
+            >
+        </div>
+
+    </div>
+</div>
+
+
+    
+
+
+
+</main>
+
+    
+
+
+
+
+
+<script defer src="/js/darkmode.js"></script>
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous" rel=preconnect></script>
+</body>
+
+</html>
